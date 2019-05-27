@@ -1,0 +1,13 @@
+git branch -a                                     //list all branches
+Git branch -r                                     //list remote branches
+git branch -d branch_name                         //delete local branch
+git branch -D branch_name                         //delete local branch forcibly
+git push <remote_name> --delete <branch_name>     //delete remote branch (remote name by default origin)
+git push <remote_name> :<branch_name>             //delete remote branch
+git checkout -b <new-branch>                      // creates new branch and simultaneously checks out
+git merge <branch name>                           //merge the branch into the checked out destinations
+#git stash - when we want to switch to another branch due to some reason and also not want to commit the changes till now in this branch , we use git stash.
+git stash                                         //push the new stash onto the stack
+git stash apply                                   //re apply the changes on the working copy(by default the last stash)
+git log --oneline                                 //shows only commit id and subject
+git diff <branch_1>..<branch_2>                   //difference between two branches
